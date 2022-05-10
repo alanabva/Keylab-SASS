@@ -1,0 +1,1330 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contenedorheader {
+  background-color: #000;
+}
+
+.contenedorheader .keylabtitulo {
+  color: #fff;
+}
+
+.contenedorheader .keylabtitulo .spamtitulo {
+  color: yellow;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 300px;
+}
+
+.keylabtitulo {
+  color: #fff;
+}
+
+.renova {
+  margin-top: 100px;
+  font-size: 50px;
+  color: #000;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.boton-comprar {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #000;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn-neon:hover {
+  background: #a945c7;
+  -webkit-box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+          box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#a945c7));
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span1 {
+  left: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#a945c7));
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#a945c7));
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#a945c7));
+  background: linear-gradient(360deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.contenedorcarousel {
+  width: 100%;
+}
+
+.d-block {
+  max-width: 100%;
+  max-height: 800px;
+}
+
+.masbuscados {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.tecladosbuscados {
+  min-height: 700px;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  padding: 50px;
+  gap: 10px;
+}
+
+.tec {
+  border: 4px transparent;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tec1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tec2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tec3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tec4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tec5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tec6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  .tecladosbuscados {
+    min-height: 500px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 50px;
+    padding: 50px;
+    gap: 10px;
+  }
+  .tec {
+    border: 4px transparent;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .tec1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav {
+    width: 100%;
+    height: 5rem;
+  }
+  nav ul {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 2px;
+    line-height: 5rem;
+    color: #fff;
+  }
+  nav ul li ul {
+    display: none;
+  }
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background: #FC5C7D;
+    background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D));
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    border-radius: 10px;
+  }
+  nav ul li ul li {
+    padding: 1rem   2rem;
+    line-height: unset;
+    white-space: nowrap;
+  }
+  body {
+    background: #FFEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+    position: relative;
+    min-height: 250vh;
+    padding-bottom: 300px;
+  }
+  .tecladosbuscados {
+    min-height: 300px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .tec {
+    border: 4px transparent;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .tec1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tec6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.footerkeylab {
+  width: 100%;
+  background: #FC5C7D;
+  background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D));
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  position: absolute;
+  bottom: 0;
+}
+
+.footerkeylab .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 30px 0px;
+}
+
+.footerkeylab .grupo1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.footerkeylab .grupo1 .box p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footerkeylab .grupo1 .redsocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 30px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.footerkeylab .grupo1 .redsocial a:hover {
+  color: #000;
+}
+
+.footerkeylab .grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.subir {
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  background: #FC5C7D;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  line-height: 40px;
+  -webkit-box-shadow: 2px 2px 10px #fff;
+          box-shadow: 2px 2px 10px #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.titulo-ofertas {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  padding: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.galeria {
+  min-height: 700px;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  padding: 50px;
+}
+
+.img {
+  border: 4px transparent;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 700px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodyofertas {
+    background: #FFEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 300px;
+  }
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 500px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .bodyofertas {
+    background: #FFEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 700px;
+  }
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 300px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.body-contactanos {
+  height: 100vh;
+  width: 100%;
+}
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 100px;
+}
+
+.contenedor:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("img/teclado3.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  z-index: -1;
+}
+
+.caja-contacto {
+  max-width: 850px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.izquierda {
+  background: url("img/teclado3.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.derecha {
+  padding: 25px 40px;
+}
+
+h3 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+h3:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #2ecc71;
+}
+
+.campo {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.campo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.boton {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.boton:hover {
+  background-color: #27ae60;
+}
+
+.campo:focus {
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  background-color: #fff;
+}
+
+.titulo-ofertas {
+  width: 100%;
+  height: 100px;
+  color: #000;
+  padding: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.galeria {
+  min-height: 700px;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  padding: 50px;
+}
+
+.img {
+  border: 4px transparent;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(img/teclado3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(img/teclado1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-image: url(img/teclado2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #000;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 700px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodyofertas {
+    background: #FFEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 300px;
+  }
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #000;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 500px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .bodyofertas {
+    background: #FFEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 700px;
+  }
+  .titulo-ofertas {
+    width: 100%;
+    height: 100px;
+    color: #000;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .galeria {
+    min-height: 300px;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .img {
+    border: 4px transparent;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.titulo-ensambla {
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  padding: 100px;
+}
+
+.parrafo-videos {
+  padding-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px;
+}
+
+.videok552 {
+  text-align: center;
+  padding: 50px;
+}
+
+.keycapsvideo {
+  text-align: center;
+  padding: 50px;
+}
+
+@media screen and (max-width: 426px) {
+  iframe {
+    max-width: 300px;
+    max-height: 200px;
+    text-align: center;
+  }
+  .titulo-ensambla {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    padding: 0;
+  }
+  .parrafo-videos {
+    padding-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 100px;
+  }
+  .videok552 {
+    text-align: center;
+    padding: 50px;
+  }
+  .keycapsvideo {
+    text-align: center;
+    padding: 50px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
