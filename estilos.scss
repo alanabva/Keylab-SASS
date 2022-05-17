@@ -9,19 +9,55 @@
 $color: #000;
 $color1: #fff;
 $color2: yellow;
+$color3: green;
+$color4: blue;
+$color5: grey;
+$color6: red;
 $mayuscula: uppercase;
+
+
+$breakpoints: (
+    sm : 426px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1280px,
+);
+
+@mixin media-up($breakpoint) {
+
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+
+}
+
+.keylabtitulo {
+    color: $color1;
+    @include media-up(sm){
+        color: $color2;
+    }
+    @include media-up(md){
+        color: $color3;
+    }
+    @include media-up(lg){
+        color: $color4;
+    }
+    @include media-up(xl){
+        color: $color5;
+    }
+}
+
+.titulos {
+    margin-top: 100px;
+    font-size: 50px;
+    color: $color6;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: $mayuscula
+}
 
 .contenedorheader {
     background-color: $color;
-    
-    .keylabtitulo {
-        color: $color1;
-        
-        .spamtitulo {
-            color: $color2;
-        }
-
-    }
 
 }
 
@@ -31,7 +67,7 @@ body{
     padding-bottom: 300px;
     }
 
-
+    
 
 // .contenedorheader {
 //     background-color: $color;
@@ -46,17 +82,9 @@ body{
 //     background-position: center;
 // }
 
-.keylabtitulo {
-    color: $color1;
-}
 
 .renova {
-    margin-top: 100px;
-    font-size: 50px;
-    color: $color;
-    padding-bottom: 30px;
-    text-align: center;
-    text-transform: $mayuscula;
+    @extend .titulos
 }
 
 .boton-comprar {
@@ -155,6 +183,7 @@ body{
     grid-template-rows: repeat(2, 1fr);
     padding: 50px;
     gap: 10px;
+
 }
 
 .tec {
@@ -208,7 +237,7 @@ body{
 
 @media screen and (max-width:1025px){
 
-    .tecladosbuscados {
+.tecladosbuscados {
         min-height: 500px;
         width: 100%;
         display: grid;
@@ -219,53 +248,53 @@ body{
         gap: 10px;
     }
     
-    .tec {
-        border: 4px transparent ;
-        padding: 20px;
-        box-sizing: border-box
+.tec {
+    border: 4px transparent ;
+    padding: 20px;
+    box-sizing: border-box
         
     }
     
-    .tec1 {
-        grid-column: 1/2;
-        background-image: url(img/teclado1.jpg);
-        background-position: center;
-        background-size: cover;
+.tec1 {
+    grid-column: 1/2;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
     }
     
-    .tec2 {
-        grid-column: 2/3;
-        background-image: url(img/teclado2.jpg);
-        background-position: center;
-        background-size: cover;
+.tec2 {
+    grid-column: 2/3;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
     }
     
-    .tec3 {
-        grid-column: 3/4;
-        background-image: url(img/teclado3.jpg);
-        background-position: center;
-        background-size: cover;
+.tec3 {
+    grid-column: 3/4;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
     }
     
-    .tec4 {
-        grid-column: 1/2;
-        background-image: url(img/teclado3.jpg);
-        background-position: center;
-        background-size: cover;
+.tec4 {
+    grid-column: 1/2;
+    background-image: url(img/teclado3.jpg);
+    background-position: center;
+    background-size: cover;
     }
     
-    .tec5 {
-        grid-column: 2/3;
-        background-image: url(img/teclado1.jpg);
-        background-position: center;
-        background-size: cover;
+.tec5 {
+    grid-column: 2/3;
+    background-image: url(img/teclado1.jpg);
+    background-position: center;
+    background-size: cover;
     }
     
-    .tec6 {
-        grid-column: 3/4;
-        background-image: url(img/teclado2.jpg);
-        background-position: center;
-        background-size: cover;
+.tec6 {
+    grid-column: 3/4;
+    background-image: url(img/teclado2.jpg);
+    background-position: center;
+    background-size: cover;
     }
 }
 

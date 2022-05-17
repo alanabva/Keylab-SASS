@@ -7,35 +7,51 @@
   list-style: none;
 }
 
-.contenedorheader {
-  background-color: #000;
-}
-
-.contenedorheader .keylabtitulo {
+.keylabtitulo {
   color: #fff;
 }
 
-.contenedorheader .keylabtitulo .spamtitulo {
-  color: yellow;
+@media screen and (min-width: 426px) {
+  .keylabtitulo {
+    color: yellow;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .keylabtitulo {
+    color: green;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .keylabtitulo {
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .keylabtitulo {
+    color: grey;
+  }
+}
+
+.titulos, .renova {
+  margin-top: 100px;
+  font-size: 50px;
+  color: red;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedorheader {
+  background-color: #000;
 }
 
 body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 300px;
-}
-
-.keylabtitulo {
-  color: #fff;
-}
-
-.renova {
-  margin-top: 100px;
-  font-size: 50px;
-  color: #000;
-  padding-bottom: 30px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .boton-comprar {
